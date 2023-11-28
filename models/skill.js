@@ -1,5 +1,5 @@
 const skills = [
-    {id: 11, skill: 'HTML', level: 7, done: true},
+    {id: 11, skill: 'HTML', level: 7, done: false},
     {id: 12, skill: 'CSS', level: 7, done: false},
     {id: 13, skill: 'JavaScript', level: 7, done: false},
     {id: 14, skill: 'Node.js', level: 2, done: false},
@@ -20,7 +20,7 @@ function update (id, updatedSkill) {
     id = parseInt(id)
     const skill = skills.find(skill => skill.id === id)
     Object.assign(skill, updatedSkill)
-
+    skill.done = skill.level === '10' ? true : skill.done === 'on' 
 }
 
 function deleteOne(id) {
