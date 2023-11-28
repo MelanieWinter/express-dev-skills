@@ -20,7 +20,9 @@ a {
 }
 
 div {
+  margin-top: 3vmin;
   margin-bottom: 3vmin;
+  font-size: 4vmin;
 }
 
 h1 {
@@ -38,6 +40,11 @@ li {
   list-style-type: none;
 }
 
-
-
-
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
